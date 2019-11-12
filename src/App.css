@@ -2,9 +2,8 @@
   background-color: #F3F5F5;
 }
 .wrapper {
-  width:1400px;
+  width:1500px;
   display:flex;
-  justify-content: flex-center;
 }
 
 /*************** HEADER *********************/
@@ -57,8 +56,26 @@
   color: #838787;
 }
 
-
-
-
 /*************** MENUS *********************/
+.menus-wrapper {
+  display:flex;
+  justify-content: center;
+}
 
+.wrapper-menus {
+  align-self: center;
+    width:1500px;
+    display:flex; 
+    justify-content: center;
+}
+
+.wrapper-card {
+  background-color: aqua;
+  width:1300px;
+}
+
+.wrapper-basket {
+  background-color: blue;
+  width: 200px;
+
+}

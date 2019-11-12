@@ -12,10 +12,17 @@ function App() {
     <div className="app">
       <Header />
       <Presentation />
-      <Menus />
-      <MenuCard />
-      <Basket />
-    </div>
+      <div className="menus-wrapper">
+        <div className="wrapper-menus">
+          <div className="wrapper-card">
+            <Menus />
+          </div>
+          <div className="wrapper-basket">
+            <Basket />
+          </div>
+        </div>
+      </div >
+    </div >
   );
 }
 
