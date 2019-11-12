@@ -4,7 +4,9 @@ import Logo from "../Images/deliveroo.png";
 const Header = () => {
     return (
         <div className="header">
-            <img className="image" src={Logo} alt="Logo" />
+            <div className="wrapper">
+                <img className="image" src={Logo} alt="Logo" />
+            </div>
         </div>
     );
 };
