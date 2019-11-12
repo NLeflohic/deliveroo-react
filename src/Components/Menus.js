@@ -2,9 +2,7 @@ import React from "react";
 import MenuCard from "./MenuCard";
 
 const Menus = (props) => {
-	console.log(props.menu);
 	const keys = Object.keys(props.menu);
-
 
 	return (
 		<div className="menus">
@@ -18,7 +16,7 @@ const Menus = (props) => {
 								<div className="card-menu">
 									{
 										props.menu[key].map((content, index) => {
-											return <MenuCard key={key + index} id={index} menu={content} />
+											return <MenuCard key={key + index} id={index} menu={content} basket={props.basket} basketFunc={props.basketFunc} />
 										})
 									}
 								</div>

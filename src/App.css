@@ -91,8 +91,6 @@
   justify-content: space-between;
 }
 
-
-
 /*********************CARD*******************/
 .menu-card {
   width : 350px;
@@ -143,4 +141,132 @@
 .price {
   font-size: 1.2rem;
   color: #7F8484;
+  margin-right: 20px;
+}
+.star {
+  padding-right:5px;
+}
+.popular {
+  margin-left: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FF8001;
+}
+/*******************************/
+
+.basket {
+  position: sticky;
+  top: 0px;
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 400px;
+  background-color: #FFFFFF;
+  display:flex;
+  flex-direction: column;
+  box-shadow: 5px  10px 10px #c2c2c2; 
+  min-height: 250px;
+  max-height: 600px;
+}
+
+.command {
+  max-height: calc (100vh-300px);
+  overflow:auto;
+}
+
+
+.button-valider {
+  margin: 10px;
+  padding: 20px;
+  font-size : 1rem;
+  font-weight: 700;
+
+  border-radius: 5px;
+  border: none;
+}
+
+.button-blue {
+  color : white;
+  background-color: #00CDBD;
+}
+
+.button-grey {
+  color : #727272;
+  background-color:#a3a3a3; 
+}
+
+.command-line {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: auto;
+}
+
+.svg-quantity {
+  margin: 10px;
+}
+
+.command-line {
+  height : 40px;
+  display: flex;
+  align-items : center;
+}
+
+.quantity {
+  display: flex;
+  align-items : center;
+  font-size: 20px;
+}
+
+.command-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.label {
+  margin-left: 10px;
+}
+
+.total-line {
+  margin-right: 20px;
+}
+
+.total-cart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.sub-total, .port, .total {
+  display:flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size : 20px;
+  margin-bottom: 20px;
+}
+.separator {
+  align: center;
+  width: 90% ;
+  color: midnightblue; 
+  size: 1px;
+}
+.empty-total {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top : 70px;
+  height: 100%;
+}
+.empty-cart {
+  font-size: 20px;
+}
+
+.total {
+  font-weight: 700;
 }

@@ -11,6 +11,7 @@ function App() {
   const [restaurant, setRestaurant] = useState({});
   const [menu, setMenu] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const [basket, setBasket] = useState([]);
 
   const fetchData = async () => {
     const response = await axios.get("https://deliveroo-api.now.sh/menu");
@@ -33,10 +34,10 @@ function App() {
           <div className="menus-wrapper">
             <div className="wrapper-menus">
               <div className="wrapper-card">
-                <Menus menu={menu} />
+                <Menus menu={menu} basket={basket} basketFunc={setBasket} />
               </div>
               <div className="wrapper-basket">
-                <Basket />
+                <Basket basket={basket} basketFunc={setBasket} />
               </div>
             </div>
           </div >
