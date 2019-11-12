@@ -1,14 +1,15 @@
 import React from "react";
 
-const Presentation = () => {
+const Presentation = (props) => {
+	console.log(props.restaurant);
 	return (
 		<div className="presentation">
 			<div className="wrapper wrapper-presentation">
 				<div className="presentation-text">
-					<h1 className="name">Le pain Quotidien - Montorgeuil</h1>
-					<p className="description">Profitez chaque matin dls,d,sfk,mkq,klf,ldsqflk,,flkmq,fldk,fskq,fks,qfk,sql</p>
+					<h1 className="name">{props.restaurant.name}</h1>
+					<p className="description">{props.restaurant.name}</p>
 				</div>
-				<img className="presentation-image" src="https://f.roocdn.com/images/menus/17697/header-image.jpg" alt="picture" />
+				<img className="presentation-image" src={props.restaurant.picture} alt="presentation_picture" />
 			</div>
 		</div>
 	)
