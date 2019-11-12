@@ -4,13 +4,15 @@ import MenuCard from "./MenuCard";
 const Menus = () => {
 	return (
 		<div className="menus">
-			<h1>Menus</h1>
-			<MenuCard />
-			<MenuCard />
-			<MenuCard />
-			<MenuCard />
-			<MenuCard />
-			<MenuCard />
+			<h1 className="menu-title">Menus</h1>
+			<div className="card-menu">
+				<MenuCard />
+				<MenuCard />
+				<MenuCard />
+				<MenuCard />
+				<MenuCard />
+				<MenuCard />
+			</div>
 		</div>)
 }
 
