@@ -84,6 +84,7 @@
   font-weight: 700;
   font-size: 1.7rem;
   padding-top: 20px;
+  color: #3b3b3b;
 }
 
 .card-menu {
@@ -131,7 +132,7 @@
   margin-top : 20px;
   font-size: 1.3rem;
   padding-bottom: 5px;
-  color: #D3333;
+  color: #3f3f3f;
 }
 
 .card-description {
@@ -252,7 +253,6 @@
   margin-bottom: 20px;
 }
 .separator {
-  align: center;
   width: 90% ;
   color: midnightblue; 
   size: 1px;
