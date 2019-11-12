@@ -1,0 +1,16 @@
+.app {
+  background-color: #F3F5F5;
+}
+
+.header {
+  height : 70px;
+  display: flex;
+  align-items: center;
+  background-color : white;
+}
+
+.image {
+  margin-left: 20px;
+  height : 50px;
+  width: auto;
+}

@@ -1,8 +1,11 @@
 import React from "react";
+import Logo from "../Images/deliveroo.png";
 
 const Header = () => {
     return (
-        <div>Header</div>
+        <div className="header">
+            <img className="image" src={Logo} alt="Logo" />
+        </div>
     );
 };
 
