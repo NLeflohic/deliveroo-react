@@ -1,7 +1,6 @@
 import React from "react";
 
 const Presentation = (props) => {
-	console.log(props.restaurant);
 	return (
 		<div className="presentation">
 			<div className="wrapper wrapper-presentation">

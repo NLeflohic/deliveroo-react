@@ -5,10 +5,8 @@ const Quantity = (props) => {
 
 	const addClick = () => {
 		const newBasket = [...props.basket];
-		console.log(newBasket);
 		for (let i = 0; i < newBasket.length; i++) {
 			if (newBasket[i].id === props.id) {
-				console.log("id : " + newBasket[i].id);
 				setQuantity(quantity + 1);
 				newBasket[i].quantity = newBasket[i].quantity + 1;
 				props.basketFunc(newBasket);
@@ -21,23 +19,19 @@ const Quantity = (props) => {
 		const newBasket = [...props.basket];
 		for (let i = 0; i < newBasket.length; i++) {
 			if (newBasket[i].id === props.id) {
-				console.log("id : " + newBasket[i].id);
 				if (newBasket[i].quantity === 1) {
 					newBasket.splice(i, 1);
 					setQuantity(quantity - 1);
 					props.basketFunc(newBasket);
-					console.log(newBasket);
 				} else {
 					setQuantity(quantity - 1);
 					newBasket[i].quantity = newBasket[i].quantity - 1;
-					console.log(newBasket);
 					props.basketFunc(newBasket);
 				}
 
 				break;
 			}
 		}
-		console.log(newBasket);
 	}
 	return (
 		<div className="quantity">

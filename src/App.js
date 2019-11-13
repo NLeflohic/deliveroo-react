@@ -29,7 +29,7 @@ function App() {
     <div className="app">
       <Header />
       {isLoading === true ? <p>Chargement</p> :
-        <div>
+        <div className="products">
           <Presentation restaurant={restaurant} />
           <div className="menus-wrapper">
             <div className="wrapper-menus">

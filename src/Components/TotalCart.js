@@ -6,8 +6,8 @@ const TotalCart = (props) => {
     for (let i = 0; i < props.basket.length; i++) {
       total = total + (props.basket[i].quantity * props.basket[i].price);
     }
-    let finalTotal = total + 2.5;
 
+    let finalTotal = total + 2.5;
     return (
       <div className="total-cart">
         <hr className="separator"></hr>
